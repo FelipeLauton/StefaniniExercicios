@@ -1,0 +1,8 @@
+package br.com.stefanini.cestadecompras.controller;
+
+public class HistoricoVendas {
+
+	public void armazenarCompraNoHistorico()throws Exception {
+		
+	}
+}

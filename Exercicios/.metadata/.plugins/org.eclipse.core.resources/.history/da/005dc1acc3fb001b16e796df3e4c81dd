@@ -1,0 +1,69 @@
+package br.com.stefanini.cestadecompras.model;
+
+public class Cliente {
+
+	private Integer idCliente;
+	private String nomeCliente;
+	private String email;
+	private String senha;
+	private String cpf;
+	
+	public Cliente() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Cliente(Integer idCliente, String nomeCliente, String email, String senha, String cpf) {
+		super();
+		this.idCliente = idCliente;
+		this.nomeCliente = nomeCliente;
+		this.email = email;
+		this.senha = senha;
+		this.cpf = cpf;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [idCliente=" + idCliente + ", nomeCliente=" + nomeCliente + ", email=" + email + ", cpf=" + cpf
+				+ "]";
+	}
+
+	public Integer getIdCliente() {
+		return idCliente;
+	}
+
+	public void setIdCliente(Integer idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+}

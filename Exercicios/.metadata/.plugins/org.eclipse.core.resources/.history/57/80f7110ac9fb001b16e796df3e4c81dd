@@ -1,0 +1,60 @@
+package br.com.stefanini.cestadecompras.model;
+
+import java.util.List;
+
+public class Vendas {
+
+	private Integer idVenda;
+	private int qntdVendas;
+	private Double totalVendas;
+	
+	public Vendas() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Vendas(Integer idVenda, int qntdVendas, Double totalVendas) {
+		super();
+		this.idVenda = idVenda;
+		this.qntdVendas = qntdVendas;
+		this.totalVendas = totalVendas;
+	}
+	
+	@Override
+	public String toString() {
+		return "Vendas [idVenda=" + idVenda + ", qntdVendas=" + qntdVendas + ", totalVendas=" + totalVendas 
+				+ "]";
+	}
+
+	public Integer getIdVenda() {
+		return idVenda;
+	}
+
+	public void setIdVenda(Integer idVenda) {
+		this.idVenda = idVenda;
+	}
+
+	public int getQntdVendas() {
+		return qntdVendas;
+	}
+
+	public void setQntdVendas(int qntdVendas) {
+		this.qntdVendas = qntdVendas;
+	}
+
+	public Double getTotalVendas() {
+		return totalVendas;
+	}
+
+	public void setTotalVendas(Double totalVendas) {
+		this.totalVendas = totalVendas;
+	}
+	
+	public void comprar(ItemProduto p) {
+		
+	}
+	
+	public static void main(String[] args) {
+		Cliente c1 = new Cliente(1,"Roberto","506.450.430-43",null);
+		Endereco e1 = new Endereco(100,"Rua 3","Tatoine","São Paulo","54039420");
+	}
+}

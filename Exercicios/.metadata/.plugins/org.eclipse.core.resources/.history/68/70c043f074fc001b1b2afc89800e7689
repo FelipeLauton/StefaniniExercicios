@@ -1,0 +1,61 @@
+package br.com.stefanini.cestadecompras.controller;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import br.com.stefanini.cestadecompras.model.ItemProduto;
+import br.com.stefanini.cestadecompras.model.Produto;
+import br.com.stefanini.cestadecompras.model.Vendas;
+
+public class ManagerItemProduto {
+
+	private List<ItemProduto> items;
+
+	public ManagerItemProduto() {
+		
+		this.items = new ArrayList<ItemProduto>();
+	}
+
+	public List<ItemProduto> getItems() {
+		return items;
+	}
+
+	public void setItems(List<ItemProduto> items) {
+		this.items = items;
+	}
+
+	public void mock() throws Exception {
+		Vendas v = new Vendas(1,0);
+		Produto p1 = new Produto(1, "Sabre de Luz", 5000.);
+		Produto p2 = new Produto(2, "Mochila", 300.);
+		Produto p3 = new Produto(3, "Tenis", 200.);
+		ItemProduto item1 = new ItemProduto(100, p1, 1);
+		ItemProduto item2 = new ItemProduto(101, p2, 3);
+		ItemProduto item3 = new ItemProduto(102, p3, 2);
+		CalculoProduto calc1 = new CalculoProduto();
+		CalculoProduto calc2 = new CalculoProduto();
+		CalculoProduto calc3 = new CalculoProduto();
+		calc1.gerarPrecoItemProduto(item1);
+		calc2.gerarPrecoItemProduto(item2);
+		calc3.gerarPrecoItemProduto(item3);
+		items.add(item1);
+		items.add(item2);
+		items.add(item3);
+		v.setQntdVendas(items.size());
+		Collections.sort(items);
+
+		System.out.println(items);
+		System.out.println(v.getQntdVendas());
+	}
+
+	public static void main(String[] args) {
+		try {
+			new ManagerItemProduto().mock();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+
+	}
+}
+

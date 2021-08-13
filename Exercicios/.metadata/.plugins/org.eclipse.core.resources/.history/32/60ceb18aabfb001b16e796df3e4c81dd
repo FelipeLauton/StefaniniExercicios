@@ -1,0 +1,60 @@
+package br.com.stefanini.cestadecompras.entity;
+
+import java.util.List;
+
+public class Vendas {
+
+	private Integer idVenda;
+	private int qntdVendas;
+	private Double totalVendas;
+	private List<ItemProduto> itens;
+	
+	public Vendas() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Vendas(Integer idVenda, int qntdVendas, Double totalVendas, List<ItemProduto> itens) {
+		super();
+		this.idVenda = idVenda;
+		this.qntdVendas = qntdVendas;
+		this.totalVendas = totalVendas;
+		this.itens = itens;
+	}
+	@Override
+	public String toString() {
+		return "Vendas [idVenda=" + idVenda + ", qntdVendas=" + qntdVendas + ", totalVendas=" + totalVendas + ", itens="
+				+ itens + "]";
+	}
+
+	public Integer getIdVenda() {
+		return idVenda;
+	}
+
+	public void setIdVenda(Integer idVenda) {
+		this.idVenda = idVenda;
+	}
+
+	public int getQntdVendas() {
+		return qntdVendas;
+	}
+
+	public void setQntdVendas(int qntdVendas) {
+		this.qntdVendas = qntdVendas;
+	}
+
+	public Double getTotalVendas() {
+		return totalVendas;
+	}
+
+	public void setTotalVendas(Double totalVendas) {
+		this.totalVendas = totalVendas;
+	}
+
+	public List<ItemProduto> getItens() {
+		return itens;
+	}
+
+	public void setItens(List<ItemProduto> itens) {
+		this.itens = itens;
+	}
+}

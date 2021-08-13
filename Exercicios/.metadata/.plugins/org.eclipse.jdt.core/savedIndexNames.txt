@@ -1,0 +1,5 @@
+INDEX VERSION 1.130+C:\Users\Bradesco\OneDrive\Área de Trabalho\Exercicios\.metadata\.plugins\org.eclipse.jdt.core
+4277910808.index
+329018730.index
+2749590324.index
+311337330.index

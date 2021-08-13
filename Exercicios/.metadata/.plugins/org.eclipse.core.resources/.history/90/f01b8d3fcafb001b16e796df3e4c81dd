@@ -1,0 +1,56 @@
+package br.com.stefanini.cestadecompras.controller;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import br.com.stefanini.cestadecompras.model.ItemProduto;
+import br.com.stefanini.cestadecompras.model.Produto;
+
+public class ManagerItemProduto {
+
+	private List<ItemProduto> items;
+
+	public ManagerItemProduto() {
+		// lista de composicao
+		this.items = new ArrayList<ItemProduto>();
+	}
+
+	public List<ItemProduto> getItems() {
+		return items;
+	}
+
+	public void setItems(List<ItemProduto> items) {
+		this.items = items;
+	}
+
+	public void mock() throws Exception {
+		Produto p1 = new Produto(1, "Sabre de Luz", 5000.);
+		Produto p2 = new Produto(2, "Mochila", 300.);
+		ItemProduto item1 = new ItemProduto(11, p1, 3);
+		ItemProduto item2 = new ItemProduto(10, p2, 5);
+		ControllerCalculoProduto calc1 = new ControllerCalculoProduto();
+		ControllerCalculoProduto calc2 = new ControllerCalculoProduto();
+		calc1.gerarPrecoItemProduto(item1);
+		calc2.gerarPrecoItemProduto(item2);
+		items.add(item1);
+		items.add(item2);
+		Collections.sort(items);
+		IFileItemProduto file = new FileItemProduto();
+		   file.open();
+		   file.writeFile(items);
+		   file.close(); 
+
+		System.out.println(items);
+	}
+
+	public static void main(String[] args) {
+		try {
+			new ManagerItemProduto().mock();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+
+	}
+}
+

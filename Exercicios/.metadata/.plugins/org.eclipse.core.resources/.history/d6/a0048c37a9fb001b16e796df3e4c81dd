@@ -1,0 +1,45 @@
+package br.com.stefanini.projetolojafuturo.entity;
+
+import java.util.List;
+
+public class Produto {
+
+	private Integer idProduto;
+	private String nomeProduto;
+	private String preco;
+	
+	public Produto() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Produto(Integer idProduto, String nomeProduto, String preco) {
+		super();
+		this.idProduto = idProduto;
+		this.nomeProduto = nomeProduto;
+		this.preco = preco;
+	}
+
+	public Integer getIdProduto() {
+		return idProduto;
+	}
+
+	public void setIdProduto(Integer idProduto) {
+		this.idProduto = idProduto;
+	}
+
+	public String getNomeProduto() {
+		return nomeProduto;
+	}
+
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
+	}
+
+	public String getPreco() {
+		return preco;
+	}
+
+	public void setPreco(String preco) {
+		this.preco = preco;
+	}
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.4+C:\Users\Bradesco\OneDrive\Área de Trabalho\Exercicios\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+329018730.index
+2749590324.index
