@@ -1,0 +1,50 @@
+package br.com.stefanini.projetoprova.main;
+
+import java.util.Scanner;
+
+import br.com.stefanini.projetoprova.model.Prova;
+
+public class ExecucaoProva {
+
+	public static void main(String[] args) {
+		int nota =0;
+		Scanner ler = new Scanner(System.in);
+		Prova p = new Prova(1,"Prova sobre Star Wars");
+		
+		System.out.println("Bem vindo a "+ p.getNomeProva() + ", começa"
+				+ " agora sua avaliação!");
+		
+		System.out.println("Pergunta 1: Em Star Wars, os Jedi são.. \n"
+				+ "A) Os mocinhos. \n"
+				+ "B) Os vilões. \n"
+				+ "C) São Neutros. \n"
+				+ "D) Nenhuma das anteriores.");
+		System.out.print("Sua Resposta:");
+		ler.next();
+		if(ler.next().equals("A") && ler.next().equals("a")) {
+			nota = nota + 1;
+			System.out.println("Resposta Correta!");
+		}else {
+			System.out.println("Resposta Errada :(");
+		}
+		System.out.println("");
+		
+//		System.out.println("Pergunta 2: Em Star Wars, os Sith são.. \n"
+//				+ "A) Os mocinhos. \n"
+//				+ "B) Os vilões. \n"
+//				+ "C) São Neutros. \n"
+//				+ "D) Nenhuma das anteriores.");
+//		System.out.print("Sua Resposta:");
+//		ler.next();
+//		if(ler.next().equals("B") && ler.next().equals("b")) {
+//			nota = nota + 1;
+//			System.out.println("Resposta Correta!");
+//		}else {
+//			System.out.println("Resposta Errada :(");
+//		}
+		
+		System.out.println("Prova finalizada.");
+
+	}
+
+}

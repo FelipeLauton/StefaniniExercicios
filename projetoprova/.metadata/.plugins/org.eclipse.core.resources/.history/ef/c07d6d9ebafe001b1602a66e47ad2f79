@@ -1,0 +1,13 @@
+package br.com.stefanini.projetoprova.main;
+
+import br.com.stefanini.projetoprova.model.Prova;
+
+public class ExecucaoProva {
+
+	public static void main(String[] args) {
+		
+		Prova p = new Prova(1,"Prova sobre Star Wars");
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package br.com.stefanini.projetoprova.main;
+
+public class ExecucaoProva {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

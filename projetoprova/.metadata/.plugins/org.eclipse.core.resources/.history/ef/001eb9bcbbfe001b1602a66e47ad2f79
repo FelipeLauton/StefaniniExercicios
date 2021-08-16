@@ -1,0 +1,12 @@
+package br.com.stefanini.projetoprova.model;
+
+import java.util.List;
+
+public class Questoes {
+
+	private Integer idQuestoes;
+	private String pergunta;
+	private List<Questoes> opcoes;
+	private String opcaoCorreta;
+	
+}

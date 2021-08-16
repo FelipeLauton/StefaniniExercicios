@@ -1,0 +1,54 @@
+package br.com.stefanini.projetoprova.model;
+
+import java.util.List;
+
+public class Questoes {
+
+	private Integer idQuestoes;
+	private String pergunta;
+	private List<Questoes> opcoes;
+	private String opcaoCorreta;
+	
+	public Questoes() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public String toString() {
+		return "Questoes [idQuestoes=" + idQuestoes + ", pergunta=" + pergunta + ", opcoes=" + opcoes
+				+ ", opcaoCorreta=" + opcaoCorreta + "]";
+	}
+
+	public Questoes(Integer idQuestoes, String pergunta, List<Questoes> opcoes, String opcaoCorreta) {
+		super();
+		this.idQuestoes = idQuestoes;
+		this.pergunta = pergunta;
+		this.opcoes = opcoes;
+		this.opcaoCorreta = opcaoCorreta;
+	}
+
+	public Integer getIdQuestoes() {
+		return idQuestoes;
+	}
+	public void setIdQuestoes(Integer idQuestoes) {
+		this.idQuestoes = idQuestoes;
+	}
+	public String getPergunta() {
+		return pergunta;
+	}
+	public void setPergunta(String pergunta) {
+		this.pergunta = pergunta;
+	}
+	public List<Questoes> getOpcoes() {
+		return opcoes;
+	}
+	public void setOpcoes(List<Questoes> opcoes) {
+		this.opcoes = opcoes;
+	}
+	public String getOpcaoCorreta() {
+		return opcaoCorreta;
+	}
+	public void setOpcaoCorreta(String opcaoCorreta) {
+		this.opcaoCorreta = opcaoCorreta;
+	}
+}
