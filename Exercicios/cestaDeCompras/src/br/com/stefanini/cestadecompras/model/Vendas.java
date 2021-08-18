@@ -6,7 +6,6 @@ public class Vendas {
 	private int qntdVendas;
 	
 	public Vendas() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Vendas(Integer idVenda, int qntdVendas) {
@@ -36,5 +35,4 @@ public class Vendas {
 	public void setQntdVendas(int qntdVendas) {
 		this.qntdVendas = qntdVendas;
 	}
-	
 }

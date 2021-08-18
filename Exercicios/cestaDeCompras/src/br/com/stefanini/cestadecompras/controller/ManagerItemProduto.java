@@ -33,7 +33,6 @@ public class ManagerItemProduto {
 		Endereco e3 = new Endereco(12,"Rua 4","Naboo","SP","035367");
 		Produto p1 = new Produto(100, "Sabre de Luz", 5000.);
 		Produto p2 = new Produto(102, "Mochila", 300.);
-		Produto p3 = new Produto(103, "Tenis", 200.);
 		Produto p4 = new Produto(104,"Blusa",50.);
 		Cliente c1 = new Cliente(1,"Danilo","540.349.234-24",e1,p1);
 		Cliente c2 = new Cliente(2,"Julia","550.233.242-94",e2,p2);

@@ -29,7 +29,7 @@ public class ExecucaoProva {
 			System.out.println("Resposta Errada :(");
 		}
 		
-		System.out.println("");
+		System.out.println(" ");
 		
 		System.out.println("Pergunta 2: Em Star Wars, os Sith são.. \n"
 				+ "A) Os mocinhos. \n"
@@ -80,7 +80,7 @@ public class ExecucaoProva {
 		p.setNota(nota);
 		
 		System.out.println("Prova finalizada.");
-		System.out.println("Sua nota foi de: "+ p.getNota() + " pontos, Parabens.");
+		System.out.println("Sua nota foi de: "+ p.getNota() + " ponto[s], Parabens.");
 		ler.close();
 	}
 }

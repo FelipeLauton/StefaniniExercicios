@@ -7,7 +7,6 @@ public class Produto {
 	private Double preco;
 
 	public Produto() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Produto(Integer idProduto, String nomeProduto, Double preco) {
@@ -40,5 +39,4 @@ public class Produto {
 	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
-
 }

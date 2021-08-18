@@ -7,9 +7,9 @@ public class Endereco {
 	private String cidade;
 	private String estado;
 	private String cep;
+	private Cliente cliente;
 	
 	public Endereco() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Endereco(Integer idEndereco, String rua, String cidade, String estado, String cep) {
@@ -65,5 +65,13 @@ public class Endereco {
 
 	public void setCep(String cep) {
 		this.cep = cep;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 }
